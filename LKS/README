@@ -1,7 +1,7 @@
 This is the implementation of the LKS (Learned KeyShape) descriptor for skecthes.
 
 References:
-* Jose M. Saavedra and Juan Manuel Barrios. Sketch based Image Retrieval using Learned KeyShapes (LKS), 2015
+* Jose M. Saavedra and Juan Manuel Barrios. Sketch based Image Retrieval using Learned KeyShapes (LKS), BMVC 2015
 
 Dependencies:
 Internal Deps
