@@ -1,0 +1,36 @@
+This is the implementation of the LKS (Learned KeyShape) descriptor for skecthes.
+
+References:
+* Jose M. Saavedra and Juan Manuel Barrios. Sketch based Image Retrieval using Learned KeyShapes (LKS), 2015
+
+Dependencies:
+Internal Deps
+ - OrandLibs jmsr and cvision, included in the git repository
+
+External Deps
+ - OpenCV 3.1.0
+   http://sourceforge.net/projects/opencvlibrary/files/opencvunix/3.1.0/opencv-3.1.0.zip 
+ - Flann
+   http://www.cs.ubc.ca/research/flann/uploads/FLANN/flann-1.8.4-src.zip
+
+For Compilation:
+ - check if the following lines works OK
+	> pkg-config --cflags opencv
+	> pkg-config --libs opencv
+	> pkg-config --cflags flann
+	> pkg-config --libs flann
+ - In Makefile, modify the variable SBIR_SHELO  to point the right directory that includes the LKS dir.
+ - make
+
+To use:
+> ./SBIR_KP_getDescriptors -cluster=Data/cluster_1M_v2_K_150.clu -i=Images/10.png
+
+
+In case of regular images, we recommend to use the  Sketch Token Approach from http://people.csail.mit.edu/lim/ to get contours.
+
+Please any question do not hesitate to contact me.
+
+Jose M. Saavedra
+jose.saavedra@orand.cl
+
+
